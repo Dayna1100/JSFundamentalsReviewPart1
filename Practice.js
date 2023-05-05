@@ -194,12 +194,41 @@ Keeping track of a total with a loop.
 - Create a loop that counts from 1 to 10, incrementing by 1.
 - On each iteration of the loop, add 3 to the total variable in step 1.
 - After your loop, print the value of total to the console.
- */
+
+------ask Stacy about this one too!
 
 let total = 0;
 
 for(let i = 1; i<=10; i++) {
-    total +3;
+    total = total +3;
 
     console.log(total);
 }
+
+Refactor the last questions loop to use the while() loop syntax
+
+Left off here...below not complete!!!
+*/
+let total = 0;
+
+while(total<=10) {
+    total = total +3;
+    console.log(total);
+    total++;
+}
+
+/* What do the continue and break statements do in JavaScript in the context of a loop?
+continue - statement breaks one iteration (in the loop) if a specified condition occurs, 
+and continues with the next iteration in the loop. (jumps over)
+break - in a loop stops the loop from running and finishes executing rest of code outside of loop if any.
+(jumps out)
+
+Fizz Buzz Interview Question:
+
+Write a loop that prints all numbers from 1 - 100.
+- If a number is divisible by 3 log "Fizz" instead of the number.
+- If a number is divisible by 5 log "Buzz" instead of the number.
+- If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
+
+What is the difference between the do...while() and the while() or for() loop?
+*/
