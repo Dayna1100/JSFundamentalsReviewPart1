@@ -245,27 +245,27 @@ Keeping track of a total with a loop.
 // - If a number is divisible by 5 log "Buzz" instead of the number.
 // - If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
 
-let i = 1;
-while (i<100) {
-    let output = "";
+// let i = 1;
+// while (i<100) {
+//     let output = "";
 
-    if (i % 3 ===0) {
-        output += "Fizz";
-    }
-    if (i % 5 ===0) {
-        output += "Buzz";
-    }
-    //if (i % 3 ===0 && i%5 ===0)  this section is redundant and not needed.!!
-      //  output += "FizzBuzz";
+//     if (i % 3 ===0) {
+//         output += "Fizz";
+//     }
+//     if (i % 5 ===0) {
+//         output += "Buzz";
+//     }
+//     //if (i % 3 ===0 && i%5 ===0)  this section is redundant and not needed.!!
+//       //  output += "FizzBuzz";
 
-    if (output !== "") {
-        console.log(output);
-    }
-    else {
-        console.log(i);
-    }
-    i++;
-}
+//     if (output !== "") {
+//         console.log(output);
+//     }
+//     else {
+//         console.log(i);
+//     }
+//     i++;
+// }
 /*
 // Alternate way to solve:
 for (let i =1; i<=100; i++) {
