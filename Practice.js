@@ -15,8 +15,8 @@ declared by var are available throughout the function in which they're declared.
 What operator can you use to find out if a variable contains a number? typeof
 */
 
-
-/*let toy = total + 15
+/*
+let toy = total + 15
 toy-=8
 console.log(toy);
 
@@ -29,7 +29,7 @@ console.log(++theNumber)
 
 
 console.log(typeof total); 
-COMMENT- make sure typeof is lower case!*/
+//COMMENT- make sure typeof is lower case!
 
 
 /* mad lib working with strings
@@ -44,33 +44,34 @@ let madlib ='phrase';
 madlib = "We " + action + " to the store.\n" + "To buy a " + thing + ".\nWe saw a " + girl + " girl.\nI gave her a " + flower +  " flower. \nHer name was " + friend + ".";
 console.log(madlib)  */
 
-/*Create a variable called madlibLiteral. Refactor your Madlib using template literals and interpolation. 
-Print the new variable to the console.
-Why would we want to convert a string to a number in JavaScript and what is one way to accomplish this? 
+// Create a variable called madlibLiteral. Refactor your Madlib using template literals and interpolation. 
+// Print the new variable to the console.
+// Why would we want to convert a string to a number in JavaScript and what is one way to accomplish this? 
+//  
+/*
+ let action = 'ran';
+ let thing = 'chair';
+ let girl = 'pretty';
+ let flower = 'red';
+ let friend = 'Susan';
 
-let action = 'ran';
-let thing = 'chair';
-let girl = 'pretty';
-let flower = 'red';
-let friend = 'Susan';
+let madLibliteral = `We ${action} to the store.
+ To buy a ${thing}.
+ We saw a ${girl} girl.
+ I gave her a ${flower} flower.
+ Her name was ${friend}.`; 
 
-let madliberal = "phrase"
-console.log(`We ${action} to the store.
-To buy a ${thing}.
-We saw a ${girl} girl.
-I gave her a ${flower} flower.
-Her name was${friend}.`); 
-
-
-See image of console output in images folder!
-Why would we want to convert a string to a number in JavaScript and what is one way to accomplish this?
-One way to convert a string into a number is to use a basic math operation. You can multiply the string 
-value by 1 and it will return a number:
-
-const quantity = "12";
-
-console.log(quantity * 1);
+ console.log(madLibliteral);
 */
+// See image of console output in images folder!
+// Why would we want to convert a string to a number in JavaScript and what is one way to accomplish this?
+// One way to convert a string into a number is to use a basic math operation. You can multiply the string 
+// value by 1 and it will return a number:
+
+ //const quantity = "12";
+
+ // console.log(quantity * 2);
+
 
 // Conditionals   
 /*
@@ -125,23 +126,29 @@ if(addButter) {
 } else {
     popcorn =  "The popcorn is good but could use some butter :("
 }
-
-
 console.log( popcorn )
+*/
 
-Ternary operator used in this statement:
+// Ternary operator used in this statement: ******* went back and refactored - and add popcorn 5/7
+// to the ternary statement.   new answer below will be: the popcorn is good but could use some butter because one of
+// the conditions is false.
 
-let addButter = true;
-let popcorn = "The popcorn is ready!";
-let message = (addButter = true) ? "The popcorn is delicious!" : "The popcorn is good but could use some butter :(";
+//stacys answer:
+// (addButter) ? popcorn = "The popcorn is delicious!" : popcorn =  "The popcorn is good but could use some butter :("
+// console.log( popcorn );
 
-console.log(message)
+// my answer:
+//let addButter = true;
+//let popcorn = "The popcorn is ready!";
+//let message = (addButter && !popcorn) ? "The popcorn is delicious!" : "The popcorn is good but could use some butter :(";
 
+//console.log(message)
+/*
 What will the code below output and why?  
 The output is "I did not get tickets" because the conditional contains false && true which equals 
 the false statement of "I did not get tickets"
 
-let soldOut = true;
+let soldOut = true;    // !soldOut  means soldOut = false;
 let onSale = true
 
 let message = (!soldOut && onSale) ? "I got tickets!" : "I did not get tickets";
@@ -150,44 +157,46 @@ console.log(message);
 
 Refactor the code from the previous question to use an if statement to instead 
 of ternary to set the message variable.
-***ask stacy about below syntax:
+
+*** need to add the ! not sybol and refactor soldout etc....done 5/7
 
 let soldOut = true;
 let onSale = true;
 
-if(soldOut, onSale) {
+if(!soldOut, onSale) {
     message = "I did not get tickets";
 } else {
     message =  "I got the tickets"
 }
 
 console.log(message);
-
 */
 
-// Loops section - Write a for loop that counts from 0 to 100, printing each number to the console.
+
+// Loops section - Write a for loop that counts from 0 to 100, printing each number to the console. tested - works!
+
+//for(let i = 0; i<=100; i++) {
+ //   console.log(i);
+//}
+
+//Write a for loop that counts from 0 to 100 in increments of 2, printing each number to the console. tested - works!
+//for(let i = 0; i<=100; i+=2) {
+//   console.log(i);
+//}
+
+// Write a for loop that counts down from 100 to 0, printing each number to the console. tested - works!
+
+//for(let i = 100; i>=0; i--) {
+  //  console.log(i);
+//}
+
+//Write a for loop that counts from 0 to 50 but only prints the odd numbers that are multiples of 5 to the console. 
+// stacy assisted with modulo below...review later!!!5/8 
+//for(let i = 0; i<=50; i++) {
+  //  if (i % 2 !== 0 && i % 5 == 0)
+    //console.log(i);
+ //}
 /*
-for(let i = 0; i<=100; i++) {
-    console.log(i);
-}
-
-//Write a for loop that counts from 0 to 100 in increments of 2, printing each number to the console.
-for(let i = 0; i<=100; i+=2) {
-   console.log(i);
-}
-
-// Write a for loop that counts down from 100 to 0, printing each number to the console.
-
-for(let i = 100; i>=1; i--) {
-    console.log(i);
-}
-
-Write a for loop that counts from 0 to 50 but only prints the odd numbers that are multiples of 5 to the console.
-
-for(let i = 0; i<=50; i+=5) {
-    console.log(i);
- }
-
 Keeping track of a total with a loop.
 
 - Create a variable called total and assign it a value of 0 (make sure total is defined outside of your loop).
@@ -195,40 +204,104 @@ Keeping track of a total with a loop.
 - On each iteration of the loop, add 3 to the total variable in step 1.
 - After your loop, print the value of total to the console.
 
-------ask Stacy about this one too!
-
-let total = 0;
-
-for(let i = 1; i<=10; i++) {
-    total = total +3;
-
-    console.log(total);
-}
-
-Refactor the last questions loop to use the while() loop syntax
-
-Left off here...below not complete!!!
+------ask Stacy about this one monday - left off here 5/7
 */
-let total = 0;
+// let total = 0;
 
-while(total<=10) {
-    total = total +3;
-    console.log(total);
-    total++;
+// for(let i = 1; i<=10; i++) {
+//     total = total +3;
+// }
+// console.log(total);
+
+// Refactor the last questions loop to use the while() loop syntax
+
+// Try to find sum of total and print after - complete - see sum below
+
+//let total = 0;
+//let sum = 0;
+// while (total <= 10) {
+//     console.log(total);
+//        total++;
+// }
+// console.log(total);
+
+//while (total <= 10) {
+  //    total+=3;
+    //  sum += total;;     
+ //}
+ //console.log(sum); 
+//  What do the continue and break statements do in JavaScript in the context of a loop?
+
+// continue statement - breaks one iteration (in the loop) if a specified condition occurs, 
+// and continues with the next iteration in the loop. (jumps over)
+
+// break statement - in a loop stops the loop from running and finishes executing rest of 
+// code outside of loop if any. (jumps out)
+
+// Fizz Buzz Interview Question:
+
+// Write a loop that prints all numbers from 1 - 100.
+// - If a number is divisible by 3 log "Fizz" instead of the number.
+// - If a number is divisible by 5 log "Buzz" instead of the number.
+// - If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
+
+let i = 1;
+while (i<100) {
+    let output = "";
+
+    if (i % 3 ===0) {
+        output += "Fizz";
+    }
+    if (i % 5 ===0) {
+        output += "Buzz";
+    }
+    //if (i % 3 ===0 && i%5 ===0)  this section is redundant and not needed.!!
+      //  output += "FizzBuzz";
+
+    if (output !== "") {
+        console.log(output);
+    }
+    else {
+        console.log(i);
+    }
+    i++;
+}
+/*
+// Alternate way to solve:
+for (let i =1; i<=100; i++) {
+    let output = "";
+    // if divisible by 3 print Fizz
+    if (i % 3 ===0)  {
+        output += "Fizz";
+    } 
+    // if divisible by 5 print Buzz
+    if (i % 5 ===0)  {
+        output += "Bizz";
+    } 
+    // if divisible by 3 and 5 print FizzBuzz   ---this section (3 lines) is redundant and not needed.!!
+      if (i % 3 ===0 && i%5 ===0)
+        output += "FizzBuzz";
+
+    // if output not empty log it
+    if (output !== "") {
+        console.log(output);
+    }
+    //otherwise log i to console
+    else {
+        console.log(i);
+    }
 }
 
-/* What do the continue and break statements do in JavaScript in the context of a loop?
-continue - statement breaks one iteration (in the loop) if a specified condition occurs, 
-and continues with the next iteration in the loop. (jumps over)
-break - in a loop stops the loop from running and finishes executing rest of code outside of loop if any.
-(jumps out)
 
-Fizz Buzz Interview Question:
 
-Write a loop that prints all numbers from 1 - 100.
-- If a number is divisible by 3 log "Fizz" instead of the number.
-- If a number is divisible by 5 log "Buzz" instead of the number.
-- If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
 
 What is the difference between the do...while() and the while() or for() loop?
+
+do...while() - do…while test condition after the code block execute
+It executes a specified statement until the test condition evaluates to false.
+
+while() - (use while a condition is true)(while loops test condition at the beginning).
+It executes a specified statement as long as the test condition evaluates to true.
+
+for() - repeats until a specified condition evaluates to false.
 */
